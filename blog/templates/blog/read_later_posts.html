@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %}
+    Read Later Posts
+{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <section id="all-posts">
+        <h2>My Read Later Posts</h2>
+
+        <ul>
+            {% if check %}
+                {% for post in posts %}
+                    {% include "blog/includes/post.html"%}
+                {% endfor %}
+            {% else %}
+                <h3>No Posts Here! 📖</h3>
+            {% endif %}
+        </ul>
+    </section>
+{% endblock %}
+
+
