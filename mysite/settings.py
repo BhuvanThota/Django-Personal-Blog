@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'check aws s3'
+SECRET_KEY = 'django-insecure-1rs1j=ih(lo)f3sp^xys-r%ol!+9+4oc(t!a2m3(v3megc)ik&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv("IS_DEVELOPMENT", True)
