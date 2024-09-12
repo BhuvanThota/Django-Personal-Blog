@@ -2,7 +2,7 @@
 django_blog
 staticfiles
 
-.zip
+*.zip
 db.sqlite3
 
 
