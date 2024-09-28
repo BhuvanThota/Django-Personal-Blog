@@ -1,6 +1,7 @@
 .ebextensions
 django_blog
 staticfiles
+myenv
 
 *.zip
 db.sqlite3

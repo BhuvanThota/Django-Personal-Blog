@@ -28,6 +28,7 @@ DEBUG = getenv("IS_DEVELOPMENT", True)
 
 ALLOWED_HOSTS = [
     getenv("APP_HOST"),
+    '127.0.0.1'
 ]
 
 
