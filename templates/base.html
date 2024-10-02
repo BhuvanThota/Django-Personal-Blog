@@ -8,12 +8,11 @@
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'app.css' %}">
     <link rel="stylesheet" href="{% static 'blog/post.css'%}">
-    <link href="{% static 'styles.css' %}" rel="stylesheet">
     {% block css %} {% endblock %}
 </head>
 <body>
-    <header id="main-navigation" class="flex flex-col md:flex-row ">
-        <h1 class="mt-[1rem] md:mt-[0]" ><a href="{% url 'Home-page'%}" >Blog Post</a></h1>
+    <header id="main-navigation">
+        <h1><a href="{% url 'Home-page'%}">Blog Post</a></h1>
         <nav>
             <a href="{% url 'read-later' %}">Read Later Posts</a>
             <a href="{% url 'posts-page' %}">All Posts</a>
