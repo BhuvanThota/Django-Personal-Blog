@@ -1,6 +1,5 @@
 .ebextensions
 django_blog
-staticfiles
 myenv
 
 *.zip
